@@ -1,4 +1,4 @@
-%brick = ConnectBrick('Tate');
+brick = ConnectBrick('Tate');
 color = brick.ColorCode(3);
 
 
