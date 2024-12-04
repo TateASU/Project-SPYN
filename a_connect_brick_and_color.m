@@ -1,7 +1,7 @@
-brick = ConnectBrick('Tate');
+brick = ConnectBrick('etat');
+
+%{
 color = brick.ColorCode(3);
-
-
 if color == 5%red
     brick.MoveMotor('AD', 0);
     pause(1);
@@ -30,3 +30,4 @@ if color == 4%yellow
     brick.beep();
     brick.beep();
 end
+%}

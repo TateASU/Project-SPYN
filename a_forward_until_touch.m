@@ -1,4 +1,4 @@
-
+%mostly og code
 firstInBlue = false;
 firstInGreen = false;
 firstInYellow = false;
@@ -63,27 +63,27 @@ while true
         pause(1);
         brick.MoveMotor('AD', -50);
         pause(1);
-        brick.MoveMotor('D',60);
-        brick.MoveMotor('A',-60);
-        pause(.6);
+        brick.MoveMotor('D',20);
+        brick.MoveMotor('A',-20);
+        pause(1);
         brick.MoveMotor('AD',0);
         pause(1);
     end
     touch = 0;
 
-    if distance > 40
+    if distance > 50
         display(distance);
         brick.MoveMotor('AD', 0);
         pause(1);
-        %brick.MoveMotor('AD', -50);
-        %pause(1);
-        brick.MoveMotor('D',-60);
-        brick.MoveMotor('A',60);
-        pause(.6);
+        brick.MoveMotor('AD', 50);
+        pause(1);
+        brick.MoveMotor('D',-20);
+        brick.MoveMotor('A',20);
+        pause(1);
         brick.MoveMotor('AD',0);
         pause(1);
         brick.MoveMotor('AD', 70);
-        pause(4);
+        pause(2);
     end
     
 end
